@@ -1,159 +1,119 @@
-http://calvinmetcalf.github.io/projections-in-web-browsers-are-terrible-and-you-should-be-ashamed-of-yourself
+http://calvinmetcalf.github.io/maptime-git
 
-*projections* in web browsers are *terrible*
+*Git* and *Github* for *GeoData*
 
-and you should be *ashamed* of yourself
+By Calvin Metcalf
 
-my name is *calvin*
+*Limits*
 
-i have *opinions*
+This is for:
 
-you might remember me from:
+Data less then 10MB
 
-my previous presentation 'things you've never heard of not fully explained'
+Preferably much less
 
-the new version of proj4js that isn't *terrible*
+This is an 80% solution
 
-and leaflet plugins for file formats that shouldn't be used on the web
+You can *not* jigger it to work for your 300MB data inventory
 
-but first
+Don't waste your time
 
-*apologies* in *advanced* to non-coastal states
+Use it for your 12 other datasets that are 800k or less
 
-im not talking about *your* state
+*also*
 
-i'm talking about that state *next to your state* that you don't really like
+just putting it out there
 
-*what is a projection*
-
-when people say projections, they usually mean a
-
-*spatial reference system*
-
-which includes
-
-a *spheroid* or model of the earths shape
-
-a *datum* which are reference points to measure from on the sphere
-
-a *coordinate* reference system with units and and starting points
-
-if it's projected
-
-a *transform* to flatten it
-
-(for the sticklers
-
-when i refer to *wgs84* as a projection
-
-pretend i'm saying *plate carrée* instead)
-
-*background*
-
-math is hard
-
-if you don't have a computer
-
-esp trig, and logs
-
-so traditionally reprojection is *hard*
-
-so an agency picks a projection and does EVERYTHING in that one
-
-e.g. (when I was at *MassDOT* we used *Massachusetts Mainland Meters NAD83*)
-
-this is great
-
-if printers are the main way that data is transfered
-
-desktop GIS software is built around this idea
-
-there are assumptions that projections rarely change
-
-and are never to be mixed because
-
-*TRIG!!!!1*
-
-fast forward to now
-
-my cellphone is *literally* a supercomputer
-
-my desktop runs other computers inside itself like the *matrix*
-
-the *interweb* exists
-
-and everyone has their own projection
-
-*124* in the state plane system
-
-with a version for *feet* and *meters*
-
-and versions in the *data* (plural of *datum*) *NAD27*, *NAD83*
-
-plus in addition to original *NAD83* we have *HARN* and *NSRS2007* variants
-
-= *992* systems
-
-this is just *'murica*
-
-this is *terrible*
-
-*nobody* cares about your flyover state plane projection
+nobody gives a shit about authoritative data sources except their publisher
 
 *nobody*
 
-if somebody gives you data that is projected tell them they are *terrible*
+bear that in mind before asking your question about preventing forks
 
-do you need *precision* that you can't get with *doubles* & *WGS84*
+you'll understand when we get there
 
-and you have the *accuracy* that it matters?
+*Git*
 
-if not then if you don't use WGS84 Lat Lngs I hate you.
+Version Control
 
-these are *cargo cult projections*
+Distributed
 
-projections are confusing and complex on the desktop
+No Central Source
 
-but on the web they are unworkable
+Unless you want one.
 
-self documenting data is *folly*
+As complex as you want it to be
 
-there is a long tail of *crazy*
+developed by linux maintainers so that large groups could code together via email
 
-the epsg database is far too big
+*lingo*
 
-there are 3 different notations for specifying projections
+commit: a set of changes
 
-none of which are consistent
+they are cumulative
 
-storage and interchange are different
+like drafts of a paper
 
-we don't leak database indexing details when we share data
+you can hope back to the state your repo was at by going to the commit
 
-geojson removed *crs* support 
+and also compare the difference between commits to see what was changed
 
-this is *not terrible*
+the basic 'unit' of git
 
-kml was always wgs84 only
+repository (repo): a place where you put code (or data or anything)
 
-kml is *terrible* for unrelated reasons
+you can have a repository on your computer
 
-but all this makes us forget
+and one on another one (like a server)
 
-projections *actually* serve a purpose
+you edit your repo
 
-\*wax poetic about Mike Bostock\*
-  
-web mercator doesn't work for everyone
+then commit the changes (with a message)
 
-no i'm not talking about flyover state plane
+then push the changes from your local computer to the server
 
-*Scandinavia*
+its like editing a word doc
 
-*McMurdo*
+saving a draft
 
-adaptive composite projections
+and then posting the new draft with a note
 
-go forth and be less terrible
+except if 8 people are all doing it for the same document it doesn't suck
 
-http://calvinmetcalf.github.io/projections-in-web-browsers-are-terrible-and-you-should-be-ashamed-of-yourself
+*github*
+
+a place to store your git repo
+
+big deal right?
+
+code view
+
+evolved into data view
+
+and difs of data
+
+*next slides few slides from Bill Morris's presentation on git*
+
+How to github
+
+step one
+
+[Sign up for a github account](https://github.com/)
+
+![signup](https://farm6.staticflickr.com/5614/15466041880_ce519038ff_b.jpg)
+
+That's it!
+
+(not really; we have some work to do. But is **is** that easy to get started.)
+
+For good measure, install the github app (aka CodeBeGone)
+
+([for mac](https://mac.github.com/) & [for windows](https://windows.github.com/))
+
+any geojson or topojson (under 10mb) will be rendered
+
+free hosting of static sites
+
+to get data in you can use [esri2open](https://github.com/project-open-data/esri2open)
+
+or [geojson.io](http://geojson.io)
