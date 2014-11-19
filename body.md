@@ -92,6 +92,8 @@ evolved into data view
 
 and difs of data
 
+every repo is a static site (if you want it to be)
+
 *next slides few slides from Bill Morris's presentation on git*
 
 How to github
