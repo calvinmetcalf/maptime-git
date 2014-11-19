@@ -147,3 +147,11 @@ http://www.macwright.org/projectityourself/
 https://gist.github.com/tmcw/9237474
 
 https://gist.github.com/calvinmetcalf/d94c2fdf7f72eff7967a
+
+http://catilinejs.com/website/leaflet-fractal/#500/-0.37/0.6/mandlebrot
+
+https://gist.github.com/jwass/10213833
+
+http://leaflet.calvinmetcalf.com/#3/32.69/10.55
+
+http://calvinmetcalf.github.io/vector-layers/#16/42.3453/-71.0647
