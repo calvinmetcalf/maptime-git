@@ -133,3 +133,15 @@ and make changes
 maybe open a *pull request* to get it merged back in
 
 maybe not
+
+maybe ~~go fuck yourself~~ make something even cooler
+
+good examples include
+
+http://cambridgegis.github.io/gisdata.html
+
+http://www.macwright.org/projectityourself/
+
+https://gist.github.com/tmcw/9237474
+
+https://gist.github.com/calvinmetcalf/d94c2fdf7f72eff7967a
