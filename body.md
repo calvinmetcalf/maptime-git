@@ -117,3 +117,19 @@ free hosting of static sites
 to get data in you can use [esri2open](https://github.com/project-open-data/esri2open)
 
 or [geojson.io](http://geojson.io)
+
+*best parts*
+
+great place to store data
+
+likely a better ui for browsing
+
+others can *fork* it
+
+make their own local version
+
+and make changes
+
+maybe open a *pull request* to get it merged back in
+
+maybe not
